@@ -7,7 +7,7 @@
 #include <iostream>
 
 namespace Engine {
-    Terminal::Terminal() {
+    Terminal::Terminal():converter() {
         init_window_size();
     }
 
@@ -39,7 +39,6 @@ namespace Engine {
 
     void Terminal::print_value(int value) const {
         converter.convert(value);
-
     }
 
 }
