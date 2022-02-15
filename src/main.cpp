@@ -1,3 +1,6 @@
+#include "app.h"
+
+/*
 #include <stdio.h>
 #include <opencv2/opencv.hpp>
 
@@ -5,11 +8,14 @@
 #include <sys/ioctl.h>
 #include <unistd.h>
 
+
+#include "terminal.h"
+
 using namespace cv;
+*/
 
-int main(int argc, char** argv )
-{
-
+int main(int argc, char** argv ) {
+    /*
     struct winsize size;
     ioctl(STDOUT_FILENO, TIOCGWINSZ, &size);
 
@@ -40,14 +46,12 @@ int main(int argc, char** argv )
             printf("\n");
 
     }
-
-
-
-    /*
-
-    namedWindow("Display Image", WINDOW_AUTOSIZE );
-    imshow("Display Image", image);
-    waitKey(0);
     */
+
+    Engine::App app;
+    app.run();
+
+
+
     return 0;
 }

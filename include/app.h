@@ -7,6 +7,9 @@ namespace Engine {
 
     struct App {
 
+        App();
+        void run();
+
         Camera* m_camera;
         Terminal* m_terminal;
     };
