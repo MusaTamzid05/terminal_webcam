@@ -8,5 +8,6 @@ add_executable( Terminal
     src/terminal.cpp
     src/app.cpp
     src/camera.cpp
+    src/converter.cpp
     )
 target_link_libraries(Terminal ${OpenCV_LIBS} )

@@ -8,6 +8,8 @@ namespace Engine {
     struct App {
 
         App();
+        virtual ~App();
+
         void run();
 
         Camera* m_camera;

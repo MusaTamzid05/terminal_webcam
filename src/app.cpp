@@ -13,16 +13,21 @@ namespace Engine {
 
     }
 
+    App::~App() {
+        delete m_camera;
+        delete m_terminal;
+    }
+
     void App::run() {
 
         cv::Mat frame;
 
         while(m_camera->is_running()) {
             m_camera->load_image(frame);
-
-            std::cout << frame.rows << "\n";
+            m_terminal->draw_image_from(frame);
         }
     }
+
 
 
 }
